@@ -7,8 +7,8 @@
   b. Eclipse
 
 2. Programming Language
-  a. Kotlin - Recommended
-  b. Java
+  * Kotlin - Recommended
+  * Java
 
 ## IDE
 
@@ -22,11 +22,25 @@ Downloaded [here](https://www.jetbrains.com/idea/download)
 
 ### Kotlin
 
-#### Kotlin Videos
+#### Kotlin Checklist
 
-Name | Comments
-:------|:------:
+- [ ] **Basics**
+  - [ ] Variables
+  - [ ] Comments
+
+#### Kotlin Documents
+
+Name | Comments | Recommended
+:-------|:------|:------:
+[kotlinlang.org](https://kotlinlang.org/docs/reference) | | v
+
+#### Kotlin Tutorial Videos
+
+Name | Comments | Recommended
+:------|:------:| 
 [Kotlin Course - Tutorial for Beginners](https://www.youtube.com/watch?v=F9UC9DY-vIU) | 
+
+#### Kotlin Interactive Learn
 
 ## Contributions
 
