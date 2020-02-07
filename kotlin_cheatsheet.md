@@ -97,7 +97,43 @@ while (i < items.size) {
 
 ### when
 
+The equivalent of switch operator in Kotlin
+
+```
+fun get(obj: Any): String =
+    when (obj) {
+        1          -> "One"
+        "2"        -> "Two"
+        !is String -> "Not a string"
+        else       -> "Unknown"
+    }
+```
+
 ### Ranges
+
+* Check if number in range
+
+```
+if (5 in 1..10) {
+    println("in range")
+}
+```
+
+* Check if out of range
+
+```
+if (11 !in 1..10) {
+    println("11 is out of range")
+}
+```
+
+* Iterating over a range with 2 steps
+
+```
+for (x in 1..10 step 2) {
+    print(x)
+}
+```
 
 ### Collections
 

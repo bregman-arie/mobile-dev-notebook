@@ -4,8 +4,7 @@
 
 1. IDE
 
-  a. IntelliJ IDEA - Recommended
-  b. Eclipse
+  * Android Studio - The official IDE for Android
 
 2. Programming Language
 
@@ -19,6 +18,12 @@
 #### Download
 
 Downloaded [here](https://www.jetbrains.com/idea/download)
+
+## Blogs
+
+Name | Description
+:------|:------:
+[techyourchance.com](https://www.techyourchance.com) | 
 
 ## Programming Languages
 
@@ -35,9 +40,10 @@ Downloaded [here](https://www.jetbrains.com/idea/download)
   - [ ] Loops
     - [ ] for
     - [ ] while
+  - [ ] Range
+    - [ ] 'in' operator
   - [ ] Collections
     - [ ] filter
-    - [ ] 'in' operator
   - [ ] Classes
     - [ ] 'is' operator
 
