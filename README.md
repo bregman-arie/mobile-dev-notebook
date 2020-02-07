@@ -27,6 +27,11 @@ Downloaded [here](https://www.jetbrains.com/idea/download)
 - [ ] **Basics**
   - [ ] Variables
   - [ ] Comments
+  - [ ] String Templates
+  - [ ] Functions
+  - [ ] Conditionals
+  - [ ] Loops
+  - [ ] 'is' operator
 
 #### Kotlin Documents
 
