@@ -75,9 +75,64 @@ fun sum(a: Int, b: Int) = a + b
 
 ### Loops
 
+for loops
+
 ```
 val items = listOf("x", "y", "z")
 for (item in items) {
     println(item)
 }
+```
+
+while
+
+```
+val items = listOf("x", "y", "z")
+var i = 0
+while (i < items.size) {
+    println("item is ${items[i]}")
+    i++
+}
+```
+
+### when
+
+### Ranges
+
+### Collections
+
+* Iterating over a collection
+
+```
+for (item in items) {
+    println(item)
+}
+```
+
+* Check if a collection contains an item
+
+```
+when {
+    "witcher" in items -> println("good game")
+    "smb" in items -> println("smb is the best")
+}
+```
+
+* Filter and map collections
+
+```
+val games = listOf("smb", "starcraft", "witcher")
+games
+  .filter { it.startsWith("g") }
+  .sortedBy { it }
+  .map { it.toUpperCase() }
+  .forEach { println(it) }
+```
+
+### Classes
+
+Create an instance
+
+```
+val rectangle = Rectangle(9.0, 8.0)
 ```

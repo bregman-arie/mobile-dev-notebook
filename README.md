@@ -3,10 +3,12 @@
 ## Learn Path
 
 1. IDE
+
   a. IntelliJ IDEA - Recommended
   b. Eclipse
 
 2. Programming Language
+
   * Kotlin - Recommended
   * Java
 
@@ -31,7 +33,13 @@ Downloaded [here](https://www.jetbrains.com/idea/download)
   - [ ] Functions
   - [ ] Conditionals
   - [ ] Loops
-  - [ ] 'is' operator
+    - [ ] for
+    - [ ] while
+  - [ ] Collections
+    - [ ] filter
+    - [ ] 'in' operator
+  - [ ] Classes
+    - [ ] 'is' operator
 
 #### Kotlin Documents
 
@@ -42,7 +50,7 @@ Name | Comments | Recommended
 #### Kotlin Tutorial Videos
 
 Name | Comments | Recommended
-:------|:------:| 
+:-------|:------|:------:
 [Kotlin Course - Tutorial for Beginners](https://www.youtube.com/watch?v=F9UC9DY-vIU) | 
 
 #### Kotlin Interactive Learn
