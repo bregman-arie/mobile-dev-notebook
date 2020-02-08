@@ -1,17 +1,46 @@
 # learn-android-development
 
-## Learn Path
+This is a collection of resources and suggestions on how to learn Android development.
 
-1. IDE
+## Learning Path
 
-  * Android Studio - The official IDE for Android
-
-2. Programming Language
+1. Programming Language
 
   * Kotlin - Recommended
   * Java
 
+2. IDE
+
+  * Android Studio - The official IDE for Android
+
+    * How to create a new project
+    * layout
+
+3. Basic Apps
+
+  1. Switch between two images by pressing on a button
+
+## Android
+
+- [ ] **Basics**
+  - [ ] Add buttons
+  - [ ] Add images (ImageView)
+
+### Courses
+
+Name | Comments
+:------|:------:
+[Kotlin for Android O Development: From Beginner to Advanced](https://www.udemy.com/course/kotlinandroid) |
+
+### Checklist
+
 ## IDE
+
+### Android Studio
+
+##### Download
+
+Downloaded [here](https://developer.android.com/studio)
 
 ### IntelliJ IDEA
 
@@ -19,7 +48,7 @@
 
 Downloaded [here](https://www.jetbrains.com/idea/download)
 
-## Blogs
+### Blogs
 
 Name | Description
 :------|:------:
@@ -27,9 +56,9 @@ Name | Description
 
 ## Programming Languages
 
-### Kotlin
+## Kotlin
 
-#### Kotlin Checklist
+### Kotlin Checklist
 
 - [ ] **Basics**
   - [ ] Variables
