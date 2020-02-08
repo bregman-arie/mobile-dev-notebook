@@ -5,20 +5,18 @@ This is a collection of resources and suggestions on how to learn Android develo
 ## Learning Path
 
 * Programming Language
-
   * Kotlin - Recommended
+      * Variables
   * Java
 
 * IDE
-
   * Android Studio - The official IDE for Android
-
     * How to create a new project
-    * layout
+    * Layout
 
 * Basic Apps
-
   * Switch between two images by pressing on a button
+      * [Code](apps/ImageSwitcher)
 
 ## Android
 
