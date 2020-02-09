@@ -68,6 +68,14 @@ Name | Description
 
 - [ ] **Basics**
   - [ ] Variables
+    - [ ] `var`
+    - [ ] integer, float, string, char, boolean
+    - [ ] predefined type -> `var someInt : Int = 5`
+  - [ ] Constants
+    - [ ] `val`
+  - [ ] Array
+  - [ ] List
+  - [ ] Set
   - [ ] Comments
   - [ ] String Templates
   - [ ] Functions
@@ -81,6 +89,7 @@ Name | Description
     - [ ] filter
   - [ ] Classes
     - [ ] 'is' operator
+  - [ ] Inheritance
 
 #### Kotlin Documents
 

@@ -26,6 +26,24 @@ var x = 3
 x += 1
 ```
 
+### Array
+
+```
+var someArray = arrayOfNulls<String>(4)
+
+someArray[0] = "Mario"
+someArray[1] = "Luigi"
+```
+
+```
+var anotherArray = intArrayOf(1, 2, 3)
+
+println(anotherArray.size)
+
+anotherArray.set(1, 100)  // first param is index, second param is the new value in this index
+anotherArray.get(2) // result is 3
+```
+
 ### String Templates
 
 ```
