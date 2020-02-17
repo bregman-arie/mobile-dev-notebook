@@ -82,6 +82,19 @@ myMap.put("two", "2")
 println(myMap["one"]) // "1"
 ```
 
+### Operators
+
+```
+var x = 1
+x = x + 1 // x -> 2
+x++ // x -> 3
+x-- // x -> 2
+
+var y = 0
+println(x > y) // true
+println(y > x) // false
+```
+
 ### String Templates
 
 ```
@@ -95,8 +108,11 @@ val y = "x is $x"
 fun getMax(a: Int, b: Int): Int {
     if (a > b) {
         return a
-    } else {
+    } else if (b > a) {
         return b
+    } else {
+        print("equal")
+        return a
     }
 }
 ```
@@ -115,6 +131,32 @@ fun get(x: String): Int? {
 }
 ```
 
+### Switch case: when
+
+"when" is the equivalent of switch operator in Kotlin
+
+```
+number = ""
+
+when (num) {
+
+    1 -> number = "1"
+    2 -> number = "2"
+    3 -> number "3"
+    else -> number = 0
+}
+```
+
+```
+fun get(obj: Any): String =
+    when (obj) {
+        1          -> "One"
+        "2"        -> "Two"
+        !is String -> "Not a string"
+        else       -> "Unknown"
+    }
+```
+
 ### Functions
 
 * Sum of two numbers
@@ -129,9 +171,32 @@ OR
 fun sum(a: Int, b: Int) = a + b
 ```
 
-### Loops
+### For Loops
 
-for loops
+```
+val someNumbers = intArrayOf(1, 2, 3)
+
+for (number in someNumbers) {
+    val x = number * 2
+    println(x)
+}
+```
+
+```
+val someNumbers = intArrayOf(1, 2, 3)
+
+for (i in someNumbers.indices) {
+    val y = someNumbers[i] * 2
+    println(y)
+}
+```
+
+```
+for (x in 0..5) {
+    val y = x * 2
+    println(y)
+}
+```
 
 ```
 val items = listOf("x", "y", "z")
@@ -140,7 +205,16 @@ for (item in items) {
 }
 ```
 
-while
+### While Loops
+
+```
+var x = 0
+while (x < 10) {
+    val y = x * 2
+    println(y)
+    x++
+}
+```
 
 ```
 val items = listOf("x", "y", "z")
@@ -149,20 +223,6 @@ while (i < items.size) {
     println("item is ${items[i]}")
     i++
 }
-```
-
-### when
-
-The equivalent of switch operator in Kotlin
-
-```
-fun get(obj: Any): String =
-    when (obj) {
-        1          -> "One"
-        "2"        -> "Two"
-        !is String -> "Not a string"
-        else       -> "Unknown"
-    }
 ```
 
 ### Ranges

@@ -80,11 +80,13 @@ Name | Description
   - [ ] Map (key value)
   - [ ] Operators
   - [ ] String Templates
-  - [ ] Functions
   - [ ] Conditionals
+    - [ ] If statement
+    - [ ] Switch
   - [ ] Loops
-    - [ ] for
-    - [ ] while
+    - [ ] For
+    - [ ] While
+  - [ ] Functions
   - [ ] Range
     - [ ] 'in' operator
   - [ ] Collections
