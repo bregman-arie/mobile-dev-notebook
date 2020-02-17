@@ -29,7 +29,7 @@ x += 1
 ### Array
 
 ```
-var someArray = arrayOfNulls<String>(4)
+var someArray = arrayOfNulls<String>(4) // An array with the length of 4
 
 someArray[0] = "Mario"
 someArray[1] = "Luigi"
@@ -42,6 +42,44 @@ println(anotherArray.size)
 
 anotherArray.set(1, 100)  // first param is index, second param is the new value in this index
 anotherArray.get(2) // result is 3
+println(anotherArray[2]) // same as above
+```
+
+The problem with Array = limited capacity. Use instead lists.
+
+### List
+
+val myList = ArrayList<String>()
+
+myList.add("Mario")
+myList.add("Luigi") // ["Mario", "Luigi"]
+
+myList.add(1, "Peach") // ["Mario", "Peach", "Luigi"]
+
+### Set
+
+Unique values
+
+```
+val mySet = HashSet<String>()
+
+mySet.add("item") // ["item"]
+mySet.add("item") // ["item"]
+
+mySet.size // 1
+```
+
+### Map
+
+Store key value items. Also called in other languages "Dictionary".
+
+```
+val myMap = HashMap<String, String>()
+
+myMap.put("one", "1")
+myMap.put("two", "2")
+
+println(myMap["one"]) // "1"
 ```
 
 ### String Templates

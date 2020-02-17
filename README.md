@@ -73,10 +73,12 @@ Name | Description
     - [ ] predefined type -> `var someInt : Int = 5`
   - [ ] Constants
     - [ ] `val`
-  - [ ] Array
-  - [ ] List
-  - [ ] Set
   - [ ] Comments
+  - [ ] Array (limited capacity)
+  - [ ] List (no capacity limits)
+  - [ ] Set (unique items)
+  - [ ] Map (key value)
+  - [ ] Operators
   - [ ] String Templates
   - [ ] Functions
   - [ ] Conditionals
