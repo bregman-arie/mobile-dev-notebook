@@ -159,6 +159,13 @@ fun get(obj: Any): String =
 
 ### Functions
 
+```
+fun test() {
+    val x = 5 * 4
+    println(x)
+}
+```
+
 * Sum of two numbers
 
 ```
@@ -167,6 +174,7 @@ fun sum(a: Int, b: Int): Int {
 }
 ```
 OR
+
 ```
 fun sum(a: Int, b: Int) = a + b
 ```
@@ -283,7 +291,15 @@ games
 
 ### Classes
 
-Create an instance
+* Create a class
+
+```
+class Person(var name:String, var age:Int) {
+
+}
+```
+
+* Create an instance
 
 ```
 val rectangle = Rectangle(9.0, 8.0)
