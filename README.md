@@ -26,6 +26,10 @@ Name | Comments
 :------|:------:
 [Kotlin for Android O Development: From Beginner to Advanced](https://www.udemy.com/course/kotlinandroid) |
 
+### IDE Setup
+
+Configure -> Settings -> General -> Auto Import -> Check everything (optimization is optional)
+
 ### Checklist
 
 - [ ] **Basics**

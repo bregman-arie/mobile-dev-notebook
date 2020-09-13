@@ -1,4 +1,4 @@
-## Kotlin Examples
+## Kotlin CheatSheet
 
 * Hello World
 
@@ -7,6 +7,26 @@ fun main() {
     // this is a comment
     println("Hello world!")
 }
+```
+
+### Comments
+
+```
+// This is a single line comment in Kotlin
+```
+
+```
+/*
+This is a
+multiline comment
+*/
+```
+
+### Print
+
+```
+println("Print with a new line at the end")
+print("Print without a new line at the end")
 ```
 
 ### Variables
@@ -24,6 +44,22 @@ d = null
    If you need to change it, use `var` */
 var x = 3
 x += 1
+var y:String? // Without setting a value
+```
+
+```
+// Increment count variable value by one
+count += 1
+// Decrement count variable value by two
+count -= 2
+```
+
+### Read Input
+
+```
+val name:String = readLine()!!.toString()
+val age:Int = readLine()!!.toInt()
+val grade = readLine()!!.toDouble()
 ```
 
 ### Array
@@ -100,6 +136,20 @@ println(y > x) // false
 ```
 var x = 1
 val y = "x is $x" 
+```
+
+### Logic Statements
+
+```
+var statement = (10>2) // statement = true
+println(10>2) // ture
+println(10!=2) // true
+println(10==5) // false
+val num = 5
+println(num>=2 && num <=7) // true
+println(num==2 || num <=3) // false
+println(!(num==10)) // true
+println(num in 1..10)) // true
 ```
 
 ### Conditionals
@@ -303,4 +353,13 @@ class Person(var name:String, var age:Int) {
 
 ```
 val rectangle = Rectangle(9.0, 8.0)
+```
+
+### Calendar
+
+```
+import java.util.*
+Calendar.getInstnace().get(Calendar.YEAR) // Get current year
+Calendar.getInstnace().get(Calendar.MONTH) // Get current month
+Calendar.getInstnace().get(Calendar.DAY) // Get current day
 ```

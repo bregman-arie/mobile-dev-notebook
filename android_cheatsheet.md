@@ -15,7 +15,7 @@
 Note: onClick is set to "change"
 
 ```
-fun change (view: View) {
+fun change(view: View) {
 
     }
 ```
@@ -25,9 +25,17 @@ fun change (view: View) {
 Note: onClick is set to "change"
 
 ```
-fun change (view: View) {
-        imageView.setImageResource(R.drawable.<image_name>)
-    }
+fun change(view: View) {
+    imageView.setImageResource(R.drawable.<image_name>)
+}
+```
+
+* Change text upon clicking on a button (the text ID is "textView")
+
+```
+fun update(view: View) {
+    textView.text = "text changed! :)"
+}
 ```
 
 ### Input
