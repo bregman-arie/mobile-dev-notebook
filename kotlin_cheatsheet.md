@@ -66,6 +66,7 @@ val grade = readLine()!!.toDouble()
 
 ```
 var someArray = arrayOfNulls<String>(4) // An array with the length of 4
+var anotherArray:Array<String> = Array(4){""}
 
 someArray[0] = "Mario"
 someArray[1] = "Luigi"
@@ -81,16 +82,40 @@ anotherArray.get(2) // result is 3
 println(anotherArray[2]) // same as above
 ```
 
+```
+var listOfStrings:Array<String> = Array(3){""}
+for(i in 0..2){
+    listofStrings[i] = readLine()!!.toString()
+}
+
+for(i in 0..4){
+    println("String $i: ${listOfStrings[i]}")
+}
+```
+
 The problem with Array = limited capacity. Use instead lists.
 
-### List
+### ArrayList
 
+```
 val myList = ArrayList<String>()
 
 myList.add("Mario")
 myList.add("Luigi") // ["Mario", "Luigi"]
 
 myList.add(1, "Peach") // ["Mario", "Peach", "Luigi"]
+```
+
+### LinkedList
+
+```
+val myList = LinkedList<String>()
+
+myList.add("Mario")
+myList.add("Luigi") // ["Mario", "Luigi"]
+
+myList.add(1, "Peach") // ["Mario", "Peach", "Luigi"]
+```
 
 ### Set
 
@@ -105,7 +130,7 @@ mySet.add("item") // ["item"]
 mySet.size // 1
 ```
 
-### Map
+### HashMap
 
 Store key value items. Also called in other languages "Dictionary".
 
@@ -116,6 +141,16 @@ myMap.put("one", "1")
 myMap.put("two", "2")
 
 println(myMap["one"]) // "1"
+
+// The following will have the same effect as the code above
+myMap["one"] = "1"
+myMap["two"] = "2"
+
+println("${myMap["one"]}") // "1"
+
+// Print each key,value in the HashMap
+for (key in myMap.keys)
+println("$key: ${myMap[key]}")
 ```
 
 ### Operators
@@ -131,11 +166,25 @@ println(x > y) // true
 println(y > x) // false
 ```
 
-### String Templates
+### Strings
 
 ```
-var x = 1
-val y = "x is $x" 
+var message = "Hello World"
+var anotherMessage = "Have a nice day"
+println("The message is: $message")
+val y = "The message is: $message" 
+
+val newMessage = message + anotherMessage
+val newMessage = "$message,$anotherMessage"
+
+println(newMessage[0]) // will print "H"
+println(newMessage[1]) // will print "e"
+
+println(newMessage.toLowerCase())
+println(newMessage.toUpperCase())
+println(newMessage.trim())
+
+val tokens = message.split(" ")
 ```
 
 ### Logic Statements
@@ -153,6 +202,23 @@ println(num in 1..10)) // true
 ```
 
 ### Conditionals
+
+```
+val num = 10
+if (num > 1){
+    println("num is greater than 1")
+}
+
+if (num in 1..10){
+    printlin("It's somewhere between 1 to 10")
+}
+else if(num in 10..20){
+    printlin("It's somewhere between 10 to 20")
+}
+else {
+    print("It's not between 1 to 20")
+}
+```
 
 ```
 fun getMax(a: Int, b: Int): Int {
@@ -173,6 +239,13 @@ Or as an expression:
 fun getMax(a: Int, b: Int) = if (a > b) a else b
 ```
 
+```
+val x = true
+val y = 2
+
+val z = if (x==true && y>=1) 1 else 0 // 1
+```
+
 Return null if x is not an Integer
 
 ```
@@ -181,12 +254,18 @@ fun get(x: String): Int? {
 }
 ```
 
+```
+if (some_string!!.contains("some_word")){
+    print("It contains it")
+}
+```
+
 ### Switch case: when
 
 "when" is the equivalent of switch operator in Kotlin
 
 ```
-number = ""
+val number = readLine()!!.toInt()
 
 when (num) {
 
@@ -205,6 +284,33 @@ fun get(obj: Any): String =
         !is String -> "Not a string"
         else       -> "Unknown"
     }
+```
+
+```
+val x = readLine()!!.toInt()
+
+when(x){
+
+1 -> {
+    print("You got 1")
+    print("Exciting")
+}
+
+5 -> {
+    print("You got 5!")
+}
+
+else -> {
+  print("Not 1, neither 5")
+}
+```
+
+```
+val x = 1
+val y = when(x){
+    1 -> true
+    2 -> false
+}
 ```
 
 ### Functions
@@ -257,6 +363,18 @@ for (x in 0..5) {
 ```
 
 ```
+for (x in 1..100 step 2){
+    printlin("Number: $x")
+}
+```
+
+```
+for (x in 100 downTo 0 step 2){
+    printlin("Number: $x")
+}
+```
+
+```
 val items = listOf("x", "y", "z")
 for (item in items) {
     println(item)
@@ -280,6 +398,48 @@ var i = 0
 while (i < items.size) {
     println("item is ${items[i]}")
     i++
+}
+```
+
+```
+i = 1
+do{
+    printlin("Number: $i")
+    i += 3
+}while (i<=20)
+```
+
+### Continue
+
+```
+for (num in 3..6){
+    if(num == 4){
+        continue // if num is 4, it will not be printed and the loop will continue to the next number
+    }
+    println(num)
+}
+```
+
+### Break
+
+```
+for (num in 3..6){
+    if(num == 4){
+        break // if num is 4, the loop will break and will not continue to the next number
+    }
+    println(num)
+}
+```
+
+```
+loop@ for (num in 3..6){
+    println("Outer loop number: $num")
+    for (innerNum in 7..10){
+        println("Inner loop number: $innerNum")
+        if(innerNum==8){
+            break@loop // break outer loop
+        }
+    }
 }
 ```
 
