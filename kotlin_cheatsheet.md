@@ -172,7 +172,7 @@ println(y > x) // false
 var message = "Hello World"
 var anotherMessage = "Have a nice day"
 println("The message is: $message")
-val y = "The message is: $message" 
+val y = "The message is: $message"
 
 val newMessage = message + anotherMessage
 val newMessage = "$message,$anotherMessage"
