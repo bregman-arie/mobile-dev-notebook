@@ -463,7 +463,7 @@ if (11 !in 1..10) {
 
 * Iterating over a range with 2 steps
 
-```
+```kotlin
 for (x in 1..10 step 2) {
     print(x)
 }
@@ -503,23 +503,88 @@ games
 
 * Create a class
 
-```
+```kotlin
 class Person(var name:String, var age:Int) {
-
 }
 ```
 
 * Create an instance
 
+```kotlin
+val person = Person("Arie", 52)
+prrintln(person.name)
 ```
-val rectangle = Rectangle(9.0, 8.0)
+
+* Class with a method
+
+```kotlin
+class Person(var name:String, var surname:String, var age:Int) {
+    init {
+        println("Created an object class")
+    }
+    
+    fun getFullName():String{
+        return "$this.name $this.surname"
+    }
+}
+
+fun main() {
+    val person = Person("John Lon", 29)
+    println(person.getFullName())
+}
 ```
 
 ### Calendar
 
-```
+```kotlin
 import java.util.*
 Calendar.getInstnace().get(Calendar.YEAR) // Get current year
 Calendar.getInstnace().get(Calendar.MONTH) // Get current month
 Calendar.getInstnace().get(Calendar.DAY) // Get current day
 ```
+
+### Package
+
+```kotlin
+// To create one in the IDE
+// Click on src directory -> New -> Package -> Name: com.box.a
+// Next you can create a class
+// Click on the package -> New -> Class -> Name: Box
+// In the class write the following
+
+package com.box.a
+
+class Box {
+    init {
+    println("Created an object class")
+    }
+}
+
+fun main () {
+    val box = Box()
+}
+```
+
+### Constructor
+
+```kotlin
+class Person(){
+    var name:String?=null
+    var surname:String?=null
+    var age:Int?=null
+    constructor(name:String, surname:String, age:Int):this(){
+        this.name = name
+        this.surname = surname
+        this.age = age
+    }
+    constructor(name:String, surname:String):this(){
+        this.name = name
+        this.surname = surname
+    }
+}
+```
+
+
+
+
+

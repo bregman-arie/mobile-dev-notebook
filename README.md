@@ -32,7 +32,10 @@ Configure -> Settings -> General -> Auto Import -> Check everything (optimizatio
 
 ### Checklist
 
-- [ ] **Basics**
+- [ ] **Programming Language**
+  - [ ] Kotlin
+
+- [ ] **Android Basics**
   - [ ] Add buttons
   - [ ] Add images (ImageView)
   - [ ] Constraints
@@ -95,7 +98,8 @@ Name | Description
     - [ ] 'in' operator
   - [ ] Collections
     - [ ] filter
-  - [ ] Classes
+  - [ ] Package
+  - [ ] Class
     - [ ] 'is' operator
   - [ ] Inheritance
 
