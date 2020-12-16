@@ -151,3 +151,11 @@ Log.d("Log Tag", "Hey, you logged this line")
 2. Add a new line like: `<color name="colorAccent">#03DAC5</color>`
 3. You can now use reference it this way: `"@color/colorAccent"`
 
+### Toasts (AKA small popup?)
+
+##### Show toast for a long time
+
+````kotlin
+Toast.makeText(this, "Wow!", Toast.LENGTH_LONG).show()
+````
+

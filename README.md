@@ -1,77 +1,29 @@
 # learn-android-development
 
-This is a collection of resources and suggestions on how to learn Android development.
+A collection of resources on how to learn Android development.
 
-## Learning Path
+## Sites
 
-* Programming Language
-  * Kotlin - Recommended
-      * Variables
-  * Java
+| Name                                                |                         Description                         |
+| :-------------------------------------------------- | :---------------------------------------------------------: |
+| [Developer Android](https://developer.android.com/) | Official Android developers site (API docs and Android SDK) |
+| [Android Weekly](https://androidweekly.net/)        |          Free newsletter on Android related topics          |
 
-* IDE
-  * Android Studio - The official IDE for Android
-    * How to create a new project
-    * Layout
-
-* Basic Apps
-  * Switch between two images by pressing on a button
-      * [Code](apps/ImageSwitcher)
-
-## Android
-
-### Courses
+## Courses
 
 Name | Comments
 :------|:------:
 [Kotlin for Android O Development: From Beginner to Advanced](https://www.udemy.com/course/kotlinandroid) |
 
-### IDE Setup
-
-Configure -> Settings -> General -> Auto Import -> Check everything (optimization is optional)
-
-### Checklist
-
-- [ ] **Programming Language**
-  - [ ] Kotlin
-
-- [ ] **Android Basics**
-  - [ ] Add buttons
-  - [ ] Add images (ImageView)
-  - [ ] Constraints
-    - [ ] Infer Constraints
-
-### Checklist
-
-## IDE
-
-### Android Studio
-
-##### Download
-
-Downloaded [here](https://developer.android.com/studio)
-
-#### Set up
-
-1. Configure auto import
-
-### IntelliJ IDEA
-
-#### Download
-
-Downloaded [here](https://www.jetbrains.com/idea/download)
-
-### Blogs
+## Blogs
 
 Name | Description
 :------|:------:
 [techyourchance.com](https://www.techyourchance.com) | 
 
-## Programming Languages
-
 ## Kotlin
 
-### Kotlin Checklist
+#### Checklist
 
 - [ ] **Basics**
   - [ ] Variables
@@ -105,17 +57,15 @@ Name | Description
 
 #### Kotlin Documents
 
-Name | Comments | Recommended
-:-------|:------|:------:
-[kotlinlang.org](https://kotlinlang.org/docs/reference) | | v
+Name | Description 
+:-------|:------
+[kotlinlang.org](https://kotlinlang.org/docs/reference) | 
 
 #### Kotlin Tutorial Videos
 
-Name | Comments | Recommended
-:-------|:------|:------:
+Name | Description 
+:-------|:------
 [Kotlin Course - Tutorial for Beginners](https://www.youtube.com/watch?v=F9UC9DY-vIU) | 
-
-#### Kotlin Interactive Learn
 
 ## Contributions
 
