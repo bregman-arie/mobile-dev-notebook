@@ -5,7 +5,7 @@
 Create a layout:
 
 1. Right click on "res" folder  -> new -> Android resource directory.
-2. Name it "layout" and also change its type to "layout".
+2. Name it "layout" and also change its type to "layout". Click on "OK" which should create the layout directory
 
 Next create a basic activity
 
@@ -29,9 +29,14 @@ Add default activity to manifest:
 
 * To see main activity (UI) go to res -> layout -> activity_main.xml
 
+### Gradle
+
+* Apply changes: click on terminal -> insert `gradlew clean` and press ctrl + enter
+
 ### Text
 
-* Center text: `Attributes -> gravity -> center`
+* Change text: `textID.text = "some text"`
+* Center text: in the IDE menu click on`Attributes -> gravity -> center`
 
 ### Buttons
 

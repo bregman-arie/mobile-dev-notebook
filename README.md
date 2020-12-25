@@ -21,6 +21,13 @@ Name | Description
 :------|:------:
 [techyourchance.com](https://www.techyourchance.com) | 
 
+## Android
+
+#### Building App Checklist
+
+- [ ] Check package name is unique and free
+  - [ ] Go to https://play.google.com/store/apps/details?id=<PACKAGE_NAME>
+
 ## Kotlin
 
 #### Checklist
