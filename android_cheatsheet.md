@@ -112,7 +112,7 @@ val userInput = x.text.toString()
 val userInput = Integer.parseInt(x.text.toString())
 ```
 
-### Date
+### Date | Calendar
 
 ##### Get current year
 
@@ -126,7 +126,7 @@ val currentYear = Calendar.getInstance().get(Calendar.YEAR)
 ##### Basic
 
 1. You click on the line number to add a breakpoint
-2. Click on "debug" button to start running
+2. Click on "debug" button to start running (Bug icon, Shift + F9)
 
 ### Logging
 
@@ -164,3 +164,25 @@ Log.d("Log Tag", "Hey, you logged this line")
 Toast.makeText(this, "Wow!", Toast.LENGTH_LONG).show()
 ````
 
+### Migrate to New Binding
+
+1. Add to build.gradle (module level) the following
+
+```
+buildFeatures {
+    viewBinding true
+}
+```
+
+2. In MainActivity add and change the following
+
+```
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding  = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+```

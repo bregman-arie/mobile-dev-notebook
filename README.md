@@ -1,6 +1,6 @@
-# learn-android-development
+# Learn Android Development
 
-A collection of resources on how to learn Android development.
+A collection of resources on Android Development.
 
 ## Sites
 
@@ -11,9 +11,10 @@ A collection of resources on how to learn Android development.
 
 ## Courses
 
-Name | Comments
-:------|:------:
-[Kotlin for Android O Development: From Beginner to Advanced](https://www.udemy.com/course/kotlinandroid) |
+Name | Free | Covers                
+:------|:------:|--------
+[Kotlin for Android O Development: From Beginner to Advanced](https://www.udemy.com/course/kotlinandroid) |No|
+[The Complete Kotlin Developer Course](https://www.udemy.com/course/the-complete-kotlin-developer-course/) |No|Kotlin + Android Apps
 
 ## Blogs
 
@@ -21,12 +22,28 @@ Name | Description
 :------|:------:
 [techyourchance.com](https://www.techyourchance.com) | 
 
+## Youtube Channels
+
+| Name                                                         | Description |
+| :----------------------------------------------------------- | :---------: |
+| [Stevdza-San](https://www.youtube.com/c/StevdzaSan/featured) |             |
+
 ## Android
+
+#### Checklist
+
+- [ ] Activity
+
+#### [Cheat Sheet](android_cheatsheet.md)
 
 #### Building App Checklist
 
 - [ ] Check package name is unique and free
   - [ ] Go to https://play.google.com/store/apps/details?id=<PACKAGE_NAME>
+
+#### IDE Recommended Settings
+
+- [ ] Enable Auto Import
 
 ## Kotlin
 

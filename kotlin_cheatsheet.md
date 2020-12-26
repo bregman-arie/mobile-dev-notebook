@@ -584,6 +584,15 @@ class Person(){
 }
 ```
 
+### Conversion
+
+```kotlin
+// String to Integer
+Integer.parse("some text")
+```
+
+
+
 
 
 
