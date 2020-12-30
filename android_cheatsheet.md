@@ -156,6 +156,10 @@ Log.d("Log Tag", "Hey, you logged this line")
 2. Add a new line like: `<color name="colorAccent">#03DAC5</color>`
 3. You can now use reference it this way: `"@color/colorAccent"`
 
+### Images
+
+Drag and drop images to res -> drawable (if drawable doesn't exists then right click on "res" -> new -> Android Resource Directory)
+
 ### Toasts (AKA small popup?)
 
 ##### Show toast for a long time
@@ -204,3 +208,66 @@ Unfortuantely it doesn't seems there is a site with a collection of hardawre pro
 ```
 AVD manager -> Create Virtual Device... -> New Hardware Profile
 ```
+
+### Support Multiple Screens
+
+1. Right click on layout directory 
+2. New -> Layout Resource File 
+3. Name it the same "activity_main" 
+4. In directory name append "-mdpi" or any other screen size you would like to support
+
+### Convert Java to Kotlin
+
+```
+ctrl + shift + a -> convert java file to kotlin
+```
+
+### Google Maps
+
+#### API key
+
+For an application that is using Google Maps you have to [obtain an API key](https://developers.google.com/maps/documentation/embed/get-api-key)
+
+Once obtained, put it in google_maps_api.xml
+
+#### Access to the internet
+
+In order for the app work properly change this line
+
+```
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+```
+
+to
+
+```
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+#### New Map
+
+```
+mMap = googleMap
+```
+
+#### Add marker with an image
+
+```
+val sydney = LatLng(-34.0, 151.0)
+        mMap.addMarker(MarkerOptions()
+                .position(sydney)
+                .title("Me")
+                .snippet("My Location")
+                .icon(BitmapDescriptorFactory
+                .fromResource(R.drawable.<IMAGE_NAME_IN_DRAWABLE_DIR>)))
+```
+
+#### Zoom on the location
+
+```
+mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,14f))
+```
+
+#### Before Releasing the app
+
+Make sure to change google_maps_api.xml from debug to release. Click on "Build Variables" in left side menu and in the dropbox choose "release"
