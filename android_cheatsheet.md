@@ -186,3 +186,21 @@ class MainActivity : AppCompatActivity() {
         binding  = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 ```
+
+### Layout
+
+#### Linear Layout
+
+Go to res -> layout -> activity_main.xml and in "Text" change it to
+
+```
+LinearLayout
+```
+
+### Hardware Profiles
+
+Unfortuantely it doesn't seems there is a site with a collection of hardawre profiles, so if you would like to have an hardware profile for an existing phone, you'll have to create a new hardware profile
+
+```
+AVD manager -> Create Virtual Device... -> New Hardware Profile
+```
