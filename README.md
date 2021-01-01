@@ -28,6 +28,12 @@ Name | Description
 | :----------------------------------------------------------- | :---------: |
 | [Stevdza-San](https://www.youtube.com/c/StevdzaSan/featured) |             |
 
+## Communities
+
+| Name                                                      |           Description            |
+| :-------------------------------------------------------- | :------------------------------: |
+| [Reddit AndroidDev](https://www.reddit.com/r/androiddev/) | Reddit "Developing Android Apps" |
+
 ## Android
 
 #### Checklist

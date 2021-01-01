@@ -1,6 +1,8 @@
 ## Android Cheat Sheet
 
-### First steps in "Empty Activity"
+### Activities
+
+#### First steps in "Empty Activity"
 
 Create a layout:
 
@@ -25,7 +27,7 @@ Add default activity to manifest:
 </activity>
 ```
 
-### Main Activity
+#### Main Activity
 
 * To see main activity (UI) go to res -> layout -> activity_main.xml
 
@@ -158,7 +160,15 @@ Log.d("Log Tag", "Hey, you logged this line")
 
 ### Images
 
+#### Add images
+
 Drag and drop images to res -> drawable (if drawable doesn't exists then right click on "res" -> new -> Android Resource Directory)
+
+#### Use Images
+
+```
+R.drawable.<image_name>
+```
 
 ### Toasts (AKA small popup?)
 
@@ -222,6 +232,31 @@ AVD manager -> Create Virtual Device... -> New Hardware Profile
 ctrl + shift + a -> convert java file to kotlin
 ```
 
+### Check and ask for permissions
+
+```
+if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, ACCESSLOCATION))
+```
+
+### Threads
+
+#### Communicate with the UI
+
+Inside Thread class add the following
+
+```
+runOnUiThread {}
+```
+
+#### Sleep
+
+Sleep for 1000 miliseconds
+
+```
+Thread.sleep(1000)
+```
+
 ### Google Maps
 
 #### API key
@@ -267,6 +302,10 @@ val sydney = LatLng(-34.0, 151.0)
 ```
 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,14f))
 ```
+
+#### Getting the location
+
+Add the following to AndroidManifest.xml: `<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
 
 #### Before Releasing the app
 
