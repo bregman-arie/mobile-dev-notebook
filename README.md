@@ -2,43 +2,65 @@
 
 A collection of resources on Android Development.
 
-## Sites
+[TOC]
+
+## Resources
+
+### Sites
 
 | Name                                                |                         Description                         |
 | :-------------------------------------------------- | :---------------------------------------------------------: |
 | [Developer Android](https://developer.android.com/) | Official Android developers site (API docs and Android SDK) |
 | [Android Weekly](https://androidweekly.net/)        |          Free newsletter on Android related topics          |
 
-## Courses
+### Courses
 
 Name | Free | Covers                
 :------|:------:|--------
 [Kotlin for Android O Development: From Beginner to Advanced](https://www.udemy.com/course/kotlinandroid) |No|
 [The Complete Kotlin Developer Course](https://www.udemy.com/course/the-complete-kotlin-developer-course/) |No|Kotlin + Android Apps
 
-## Blogs
+### Blogs
 
 Name | Description
 :------|:------:
 [techyourchance.com](https://www.techyourchance.com) | 
 
-## Youtube Channels
+### Youtube Channels
 
-| Name                                                         | Description |
-| :----------------------------------------------------------- | :---------: |
-| [Stevdza-San](https://www.youtube.com/c/StevdzaSan/featured) |             |
+| Name                                                         |                Description                 |
+| :----------------------------------------------------------- | :----------------------------------------: |
+| [Stevdza-San](https://www.youtube.com/c/StevdzaSan/featured) |             Android only stuff             |
+| [tutorialsEU](https://www.youtube.com/c/tutorialsEU/videos)  | Covers different topics, including android |
 
-## Communities
+### Communities
 
 | Name                                                      |           Description            |
 | :-------------------------------------------------------- | :------------------------------: |
 | [Reddit AndroidDev](https://www.reddit.com/r/androiddev/) | Reddit "Developing Android Apps" |
+
+### Applications
+
+| Name                                                         |                     Description                     |
+| :----------------------------------------------------------- | :-------------------------------------------------: |
+| [To-Do List](https://www.youtube.com/watch?v=i9mkAoZ8FNk&ab_channel=BenO%27Brien) |         A very basic To-Do List application         |
+| [Quiz](https://www.youtube.com/watch?v=b21fiIyOW4A&t=164s&ab_channel=tutorialsEU) |          A complete quiz app from scratch           |
+| [Food Ordering](https://www.youtube.com/watch?v=iF9PYjn3Gvg&ab_channel=TheCodeNest) | An application for ordering food. Notes: Audio Only |
+| [Stopwatch](https://www.youtube.com/watch?v=gqn7HqTnOPA&ab_channel=AnggaRisky) |        A stopwatch application for workouts         |
+
+### Components
+
+| Name                                                         | Description |
+| :----------------------------------------------------------- | ----------- |
+| [Custom Progress Bar and Alert Dialogs](https://www.youtube.com/watch?v=RluVBDelwCA&ab_channel=tutorialsEU) |             |
 
 ## Android
 
 #### Checklist
 
 - [ ] Activity
+- [ ] Layout
+- [ ] View
 
 #### [Cheat Sheet](android_cheatsheet.md)
 
@@ -84,6 +106,8 @@ Name | Description
   - [ ] Class
     - [ ] 'is' operator
   - [ ] Inheritance
+
+#### [Cheat Sheet](kotlin_cheatsheet.md)
 
 #### Kotlin Documents
 
