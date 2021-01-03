@@ -8,10 +8,11 @@ A collection of resources on Android Development.
 
 ### Sites
 
-| Name                                                |                         Description                         |
-| :-------------------------------------------------- | :---------------------------------------------------------: |
-| [Developer Android](https://developer.android.com/) | Official Android developers site (API docs and Android SDK) |
-| [Android Weekly](https://androidweekly.net/)        |          Free newsletter on Android related topics          |
+| Name                                                |                         Description                          |
+| :-------------------------------------------------- | :----------------------------------------------------------: |
+| [Developer Android](https://developer.android.com/) | Official Android developers site (API docs and Android SDK)  |
+| [Android Weekly](https://androidweekly.net/)        |          Free newsletter on Android related topics           |
+| [TheAppFuel](https://www.theappfuel.com)            | "Get design inspiration from compilation of user flows & screens from successful apps" |
 
 ### Courses
 
@@ -53,6 +54,12 @@ Name | Description
 | Name                                                         | Description |
 | :----------------------------------------------------------- | ----------- |
 | [Custom Progress Bar and Alert Dialogs](https://www.youtube.com/watch?v=RluVBDelwCA&ab_channel=tutorialsEU) |             |
+
+### Design
+
+| Name                                | Description |
+| :---------------------------------- | ----------- |
+| [Material.io](https://material.io/) |             |
 
 ## Android
 

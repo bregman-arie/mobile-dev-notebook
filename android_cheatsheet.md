@@ -27,9 +27,13 @@ Add default activity to manifest:
 </activity>
 ```
 
-#### Main Activity
+#### Move between activities
 
-* To see main activity (UI) go to res -> layout -> activity_main.xml
+```kotlin
+val intent = Intent(context,<activity_name>::class.java)
+intent.putExtra("var_name", "var_value")
+context!!.startActivity(intent)
+```
 
 ### Gradle
 
@@ -170,7 +174,7 @@ Drag and drop images to res -> drawable (if drawable doesn't exists then right c
 R.drawable.<image_name>
 ```
 
-### Toasts (AKA small popup?)
+### Toasts
 
 ##### Show toast for a long time
 
