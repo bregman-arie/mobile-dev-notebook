@@ -129,12 +129,12 @@ val currentYear = Calendar.getInstance().get(Calendar.YEAR)
 
 ### Debugging
 
-##### Basic
+##### UI
 
 1. You click on the line number to add a breakpoint
 2. Click on "debug" button to start running (Bug icon, Shift + F9)
 
-### Logging
+##### Logging
 
 You can log messages and see them when clicking on "Logcat" in the IDE.
 
@@ -314,3 +314,44 @@ Add the following to AndroidManifest.xml: `<uses-permission android:name="androi
 #### Before Releasing the app
 
 Make sure to change google_maps_api.xml from debug to release. Click on "Build Variables" in left side menu and in the dropbox choose "release"
+
+### SQL
+
+#### DatabaseHandler Class
+
+A class for managing Database operations (like create, insert, etc.)
+
+```kotlin
+class DatabaseHandler(context: Context) :
+    SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+
+        companion object {
+        private const val DATABASE_VERSION = 1
+        private const val DATABASE_NAME = "MyDatabasse"
+        private const val TABLE_PLAYER = "PlayerTable"
+
+        private const val KEY_ID = "_id"
+        private const val KEY_NAME = "name"
+    }
+        
+        override fun onCreate(db: SQLiteDatabase?) {
+            val CREATE_PLAYER_TABLE =  ("CREATE TABLE "+ TABLE_PLAYER + "("
+            +KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT" + ")")
+            db?.execSQL(CREATE_PLAYER_TABLE)
+        }
+}
+```
+
+#### Insert only once
+
+This is useful for use cases like adding a player. You don't want to add a player.
+
+The way to do it is calling the "addPlayer" function once from "onCreate" method of your Database handler class.
+
+#### Delete Database
+
+Delete database called "MyDatabase"
+
+```kotlin
+this.deleteDatabase("MyDatabase")
+```

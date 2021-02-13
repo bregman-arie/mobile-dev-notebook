@@ -34,6 +34,21 @@ Name | Description
 | [Stevdza-San](https://www.youtube.com/c/StevdzaSan/featured) |             Android only stuff             |
 | [tutorialsEU](https://www.youtube.com/c/tutorialsEU/videos)  | Covers different topics, including android |
 
+### Youtube Videos
+
+##### RecyclerView
+
+| Name                                                         | Description |
+| :----------------------------------------------------------- | ----------- |
+| [Creating a RecyclerView that handles Click Events in Android Studio](https://www.youtube.com/watch?v=ai9rSGcDhyQ&ab_channel=CodePalace) |             |
+
+##### Animations
+
+| Name                                                         | Description |
+| :----------------------------------------------------------- | ----------- |
+| [Get animated (Android Dev Summit '18)](https://www.youtube.com/watch?v=N_x7SV3I3P0&ab_channel=AndroidDevelopers) |             |
+| [Slide Animation Between Activities](https://www.youtube.com/watch?v=0s6x3Sn4eYo&ab_channel=CodinginFlow) |             |
+
 ### Communities
 
 | Name                                                      |           Description            |
@@ -68,6 +83,7 @@ Name | Description
 - [ ] Activity
 - [ ] Layout
 - [ ] View
+- [ ] RecyclerView
 
 #### [Cheat Sheet](android_cheatsheet.md)
 
