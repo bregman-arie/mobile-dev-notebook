@@ -1,5 +1,11 @@
 ## Android Cheat Sheet
 
+Note: all the examples use Kotlin and not Java.
+
+* [Buttons](#buttons)
+* [Colors](#colors)
+* [EditText](#EditText)
+
 ### Activities
 
 #### First steps in "Empty Activity"
@@ -46,16 +52,6 @@ context!!.startActivity(intent)
 
 ### Buttons
 
-##### Run function upon clicking on a button - UI way
-
-In the UI, set onClick to "change" and add the following function
-
-```
-fun change(view: View) {
-
-    }
-```
-
 ##### Run code upon clicking on a button - Listener way (Preferred)
 
 Go to main activity and under the main activity class, add this
@@ -63,7 +59,17 @@ Go to main activity and under the main activity class, add this
 ```kotlin
 <button_id>.setOnClickListener{
     // Add code to execute when the button is clicked on
-}
+}    
+```
+
+##### Run function upon clicking on a button - UI way
+
+In the UI, set onClick to "change" and add the following function
+
+```kotlin
+fun change(view: View) {
+
+    }
 ```
 
 ##### Change image upon clicking on a button with the id "change"
@@ -174,6 +180,12 @@ Drag and drop images to res -> drawable (if drawable doesn't exists then right c
 R.drawable.<image_name>
 ```
 
+#### Set a different image
+
+```kotlin
+binding.someImageView.setImageResource(R.drawable.someOtherImage)
+```
+
 ### Toasts
 
 ##### Show toast for a long time
@@ -203,6 +215,49 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding  = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+```
+
+### EditText
+
+#### Example
+
+```xml
+<EditText
+    android:id="@+id/playerName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="32sp"></EditText>
+```
+
+#### Disable Editing
+
+```xml
+ android:enabled="false"
+```
+
+#### Hide Underline
+
+```xml
+android:background="@android:color/transparent"
+```
+
+#### Limit number of characters
+
+```
+android:maxLength="10"
+```
+
+#### Activate Disabled EditText
+
+```kotlin
+binding.someEditText.isFocusable=true
+binding.someEditText.isEnabled=true
+binding.someEditText.isFocusableInTouchMode=true
+binding.someEditText.isFocusable=true
+binding.someEditText.isCursorVisible=true
+binding.someEditText.requestFocus()
+val inputMethodManager = this.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+inputMethodManager.showSoftInput(it, InputMethodManager.SHOW_FORCED)
 ```
 
 ### Layout
