@@ -399,7 +399,7 @@ class DatabaseHandler(context: Context) :
 
 #### Insert only once
 
-This is useful for use cases like adding a player. You don't want to add a player.
+This is useful for use cases like adding a player. You don't want to add a player every time a user starts the app.
 
 The way to do it is calling the "addPlayer" function once from "onCreate" method of your Database handler class.
 
@@ -409,4 +409,10 @@ Delete database called "MyDatabase"
 
 ```kotlin
 this.deleteDatabase("MyDatabase")
+```
+
+#### Retrieve Boolean from the Database
+
+```kotlin
+val booleanVar = cursor.getInt(SOME_KEY_IN_DB) > 0;
 ```

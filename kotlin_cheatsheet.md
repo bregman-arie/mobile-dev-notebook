@@ -1,6 +1,25 @@
 ## Kotlin CheatSheet
 
-* Hello World
+* [Comments][#Comments]
+* [Print](#Print)
+* [Varibles](#Variables)
+* [Input](#Input)
+* [Array](#Array)
+* [ArrayList](#ArrayList)
+* [LinkedList](#LinkedList)
+* [Set](#Set)
+* [Hashmap](#Hashmap)
+* [Operators](#Operators)
+* [Collections](#Collections)
+* [Classes](#Classes)
+* [Calendar](#Calendar)
+* [Package](#Package)
+* [Constructor](#Constructor)
+* [Conversion](#Conversion)
+
+
+
+#### Hello World
 
 ```
 fun main() {
@@ -54,7 +73,7 @@ count += 1
 count -= 2
 ```
 
-### Read Input
+### Input
 
 ```
 val name:String = readLine()!!.toString()
@@ -104,6 +123,9 @@ myList.add("Mario")
 myList.add("Luigi") // ["Mario", "Luigi"]
 
 myList.add(1, "Peach") // ["Mario", "Peach", "Luigi"]
+
+// Array Size
+myList!!.size
 ```
 
 ### LinkedList
