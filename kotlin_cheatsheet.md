@@ -10,6 +10,8 @@
 * [Set](#Set)
 * [Hashmap](#Hashmap)
 * [Operators](#Operators)
+* [Strings](#Strings)
+* [Conditionals](#Conditionals)
 * [Collections](#Collections)
 * [Classes](#Classes)
 * [Calendar](#Calendar)
@@ -225,6 +227,8 @@ println(num in 1..10)) // true
 
 ### Conditionals
 
+#### Numbers
+
 ```
 val num = 10
 if (num > 1){
@@ -279,6 +283,15 @@ fun get(x: String): Int? {
 ```
 if (some_string!!.contains("some_word")){
     print("It contains it")
+}
+```
+
+#### Booleans
+
+```kotlin
+// if a is true
+if (a) {
+    ...
 }
 ```
 
