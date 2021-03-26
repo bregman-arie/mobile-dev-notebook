@@ -295,6 +295,15 @@ if (a) {
 }
 ```
 
+#### Null
+
+```kotlin
+// if a is null
+if (a == null) {
+    ...
+}
+```
+
 ### Switch case: when
 
 "when" is the equivalent of switch operator in Kotlin

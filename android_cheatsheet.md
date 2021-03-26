@@ -96,6 +96,30 @@ fun update(view: View) {
 * match parent - the width will be based on the width of the parent in component tree
 * Use "pt" measurement for setting the width or height of components (e.g. 30pt)
 
+##### Share Button
+
+```kotlin
+binding.shareButton.setOnClickListener {
+            val shareIntent = Intent().apply {
+                this.action = Intent.ACTION_SEND
+                this.putExtra(Intent.EXTRA_TEXT, "Check out this app on Google Play\n\n" +
+                        "http://play.google.com/store/apps/details?id=com.X.Y")
+                this.type = "text/plain"
+
+            }
+            startActivity(shareIntent)
+        }
+```
+
+##### Rate Button
+
+```kotlin
+binding.rateButton.setOnClickListener {
+            val rateIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.X.Y"))
+            startActivity(rateIntent)
+        }
+```
+
 ### Input
 
 ##### Add input field 

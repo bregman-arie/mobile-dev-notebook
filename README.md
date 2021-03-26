@@ -76,6 +76,13 @@ Name | Description
 | :---------------------------------- | ----------- |
 | [Material.io](https://material.io/) |             |
 
+### Assets
+
+| Name                                   | Description |
+| :------------------------------------- | ----------- |
+| [Material.io](https://material.io/)    | Icons       |
+| [Freesound.org](https://freesound.org) | Sounds      |
+
 ## Android
 
 #### Checklist
@@ -91,6 +98,12 @@ Name | Description
 
 - [ ] Check package name is unique and free
   - [ ] Go to https://play.google.com/store/apps/details?id=<PACKAGE_NAME>
+- [ ] Icon for the app
+
+#### Before Publishing
+
+- [ ] Make sure the app works with different specs (especially phone size)
+- [ ] If you have ads, make sure to switch from test ads to prod ads
 
 #### IDE Recommended Settings
 
