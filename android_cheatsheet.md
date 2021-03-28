@@ -4,6 +4,7 @@ Note: all the examples use Kotlin and not Java.
 
 * [Buttons](#buttons)
 * [Colors](#colors)
+* [Dialogs](#dialogs)
 * [EditText](#EditText)
 
 ### Activities
@@ -191,6 +192,25 @@ Log.d("Log Tag", "Hey, you logged this line")
 1. Go to res -> values -> colors.xml
 2. Add a new line like: `<color name="colorAccent">#03DAC5</color>`
 3. You can now use reference it this way: `"@color/colorAccent"`
+
+### Dialogs
+
+#### Alert Dialog
+
+```kotlin
+val builder = AlertDialog.Builder(this)
+with(builder) {
+    setTitle("Data Reset Warning")
+    setPositiveButton("Do It"){dialog, which ->
+                               db.reset()
+                              }
+    setNegativeButton("Cancel"){dialog, which ->
+                               }
+    setMessage("This will reset the application data. Are you sure you wanna do that?")
+}
+val dialog: AlertDialog = builder.create()
+dialog.show()
+```
 
 ### Images
 

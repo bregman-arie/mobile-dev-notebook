@@ -91,6 +91,7 @@ Name | Description
 - [ ] Layout
 - [ ] View
 - [ ] RecyclerView
+- [ ] Fragments
 
 #### [Cheat Sheet](android_cheatsheet.md)
 

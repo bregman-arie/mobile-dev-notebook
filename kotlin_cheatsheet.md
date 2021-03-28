@@ -631,7 +631,9 @@ class Person(){
 ### Conversion
 
 ```kotlin
-// String to Integer
+// String to Integer (variable)
+x.toString().toInt()
+// String to Integer (String)
 Integer.parse("some text")
 ```
 
